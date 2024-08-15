@@ -1,0 +1,43 @@
+.hero {
+  background-color: #e6f5f7;
+}
+
+.hero-content {
+  width: 85%;
+  margin: 0 auto;
+  height: calc(100vh - 7rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.hero-text {
+  height: 100%;
+  color: #0097b2;
+  display: flex;
+}
+
+.hero-text-inner {
+  align-self: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.accent {
+  color: #97b200;
+}
+
+.hero-message {
+  padding: 2rem 0;
+}
+
+.hero-pic {
+  display: flex;
+}
+
+.hero-img {
+  width: 100%;
+  align-self: center;
+}
