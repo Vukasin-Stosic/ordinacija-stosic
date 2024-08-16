@@ -57,14 +57,39 @@ nav {
 
 .navbar-list-item {
   text-decoration: none;
+  text-align: center;
   color: #0097b2;
-  padding-left: 3rem;
+  margin-left: 3rem;
+  padding: 0 1rem;
   font-weight: 700;
   display: flex;
-  justify-content: center;
+
+  /* justify-content: center; */
   gap: 0.5rem;
+  /* border: 1px solid black; */
 }
 
 .navbar-list-item:hover {
   color: #b20097;
+}
+
+#navbar-services {
+  position: relative;
+}
+
+.drop-down {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+}
+
+.drop-down-item {
+  text-align: center;
+  text-decoration: none;
+  color: #0097b2;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
 }

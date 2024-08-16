@@ -20,20 +20,20 @@ main {
   width: 85%;
   margin: 3rem auto;
   color: #0097b2;
-  display: flex;
-  /* background-color: #97b200; */
-  max-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
 .about-img-container {
-  /* background-color: chocolate; */
   text-align: center;
+  align-self: center;
 }
 
 .about-img {
-  height: 100%;
+  max-height: 550px;
 }
+
 .about-content {
   padding: 2rem;
   display: flex;

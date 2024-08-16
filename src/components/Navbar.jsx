@@ -56,10 +56,36 @@ function Navbar() {
               O nama
             </a>
           </li>
-          <li>
+          <li id="navbar-services">
             <a href="#services" className="navbar-list-item">
               Usluge <FontAwesomeIcon icon={faSortDown} />
             </a>
+            <div className="drop-down">
+              <a href="#" className="drop-down-item">
+                Bolesti zuba
+              </a>
+              <a href="#" className="drop-down-item">
+                Bolesti zuba
+              </a>
+              <a href="#" className="drop-down-item">
+                Bolesti zuba
+              </a>
+              <a href="#" className="drop-down-item">
+                Bolesti zuba
+              </a>
+              <a href="#" className="drop-down-item">
+                Bolesti zuba
+              </a>
+              <a href="#" className="drop-down-item">
+                Bolesti zuba
+              </a>
+              <a href="#" className="drop-down-item">
+                Bolesti zuba
+              </a>
+              <a href="#" className="drop-down-item">
+                Bolesti zuba
+              </a>
+            </div>
           </li>
           <li>
             <a href="#contact-us" className="navbar-list-item">

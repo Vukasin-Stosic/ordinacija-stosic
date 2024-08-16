@@ -1,0 +1,54 @@
+@media screen and (max-width: 780px) {
+  .navbar-list-item {
+    margin-left: 1rem;
+  }
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+  }
+  .about {
+    grid-template-columns: 1fr 2fr;
+    width: 95%;
+  }
+  .about-img {
+    max-width: 100%;
+  }
+
+  .info-section {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .location,
+  .compani-info,
+  .contact-us {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  nav {
+    display: none;
+  }
+  .hero-pic {
+    display: none;
+  }
+  .services {
+    grid-template-columns: 1fr;
+  }
+  /* .about {
+    flex-direction: column;
+    max-height: none;
+  } */
+  /* .about-img-container {
+    display: none;
+  } */
+  /* .about-img {
+    height: auto;
+    width: 100%;
+  } */
+  /* .about-content {
+    position: absolute;
+    top: 0;
+  } */
+}
