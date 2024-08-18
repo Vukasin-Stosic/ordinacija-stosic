@@ -7,7 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: white;
-  /* position: relative; */
+  font-size: 1rem;
 }
 
 .cta {
@@ -58,4 +58,5 @@ footer {
   background-color: #004f5d;
   padding: 2rem;
   text-align: center;
+  font-size: 0.8rem;
 }

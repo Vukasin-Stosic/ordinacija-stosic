@@ -32,7 +32,7 @@
     margin: 0 auto;
   }
   .location {
-    min-height: calc(100vh - 8rem);
+    min-height: calc(80vw);
   }
 }
 
@@ -42,6 +42,10 @@
   }
   .hero-content {
     height: 100vh;
+  }
+  .hero-text-inner {
+    align-self: end;
+    padding-bottom: 1rem;
   }
   .hero-pic {
     display: none;

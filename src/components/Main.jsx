@@ -190,7 +190,17 @@ function Main() {
               </a>
               <a className="cta phone-btn" onClick={phoneCall}>
                 {showPhone ? (
-                  <p className="close">&#10005;</p>
+                  <p className="close">
+                    &#10005;
+                    <div className={showPhone ? "phone-hidden" : "hidden"}>
+                      <div className="cta phone-btn phone-btn-inner">
+                        <FontAwesomeIcon icon={faPhoneFlip} /> 017417419
+                      </div>
+                      <div className="cta phone-btn phone-btn-inner">
+                        <FontAwesomeIcon icon={faMobileScreen} /> 0637351651
+                      </div>
+                    </div>
+                  </p>
                 ) : (
                   <div>
                     <p>Pozovi</p>
@@ -198,14 +208,6 @@ function Main() {
                   </div>
                 )}
               </a>
-              <div className={showPhone ? "phone-hidden" : "hidden"}>
-                <div className="cta phone-btn phone-btn-inner">
-                  <FontAwesomeIcon icon={faPhoneFlip} /> 017417419
-                </div>
-                <div className="cta phone-btn phone-btn-inner">
-                  <FontAwesomeIcon icon={faMobileScreen} /> 0637351651
-                </div>
-              </div>
             </div>
           </div>
         </div>
