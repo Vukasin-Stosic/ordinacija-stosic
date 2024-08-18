@@ -1,3 +1,10 @@
+@media screen and (max-width: 1030px) {
+  .email-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 780px) {
   .navbar-list-item {
     margin-left: 1rem;
@@ -24,11 +31,17 @@
     width: 95%;
     margin: 0 auto;
   }
+  .location {
+    min-height: calc(100vh - 8rem);
+  }
 }
 
 @media screen and (max-width: 430px) {
   nav {
     display: none;
+  }
+  .hero-content {
+    height: 100vh;
   }
   .hero-pic {
     display: none;
@@ -36,19 +49,7 @@
   .services {
     grid-template-columns: 1fr;
   }
-  /* .about {
-    flex-direction: column;
-    max-height: none;
-  } */
-  /* .about-img-container {
-    display: none;
-  } */
-  /* .about-img {
-    height: auto;
-    width: 100%;
-  } */
-  /* .about-content {
-    position: absolute;
-    top: 0;
-  } */
+  .about {
+    grid-template-columns: 1fr;
+  }
 }

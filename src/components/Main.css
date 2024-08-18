@@ -154,6 +154,8 @@ textarea:focus {
 .action {
   margin-top: 1rem;
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   justify-content: space-between;
   position: relative;
 }

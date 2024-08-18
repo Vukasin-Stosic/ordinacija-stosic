@@ -10,6 +10,7 @@ import {
 
 function Navbar() {
   const [hide, setHide] = useState(false);
+  const [dropDown, setDropDown] = useState(false);
 
   let prevScrollpos = window.scrollY;
 
@@ -21,6 +22,10 @@ function Navbar() {
       setHide(false);
     }
     prevScrollpos = currentScrollPos;
+  }
+
+  function showDropDown() {
+    !dropDown ? setDropDown(true) : setDropDown(false);
   }
 
   window.addEventListener("scroll", hideNavbar);
@@ -56,11 +61,15 @@ function Navbar() {
               O nama
             </a>
           </li>
-          <li id="navbar-services">
+          <li
+            id="navbar-services"
+            onMouseEnter={showDropDown}
+            onMouseLeave={showDropDown}
+          >
             <a href="#services" className="navbar-list-item">
               Usluge <FontAwesomeIcon icon={faSortDown} />
             </a>
-            <div className="drop-down">
+            <div className={dropDown ? "drop-down" : "hidden"}>
               <a href="#" className="drop-down-item">
                 Bolesti zuba
               </a>

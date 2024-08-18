@@ -47,26 +47,28 @@ function Main() {
         <div className="service">
           <h3>Bolesti zuba</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            nostrum!
+            Plombiranje zuba helio (bele) i amalgamskim plombama, kao i lečenje
+            upalnih stanja zuba (pulpiti), nadogradnja polomljenih krunica zuba
+            inlejima ili onlejim. Beljenje zuba ordinacijska varijanta ili
+            izrada folija za kućno beljenje zuba.
           </p>
         </div>
         <div className="service">
-          <h3>Bolesti zuba</h3>
+          <h3>Paradontologija</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            nostrum!
+            Uklanjanje mekih naslaga i zubnog kamenca. Lečenje upalnih stanja
+            potpornog aparata zuba (gingivektomije i režanj operacije).
           </p>
         </div>
         <div className="service">
-          <h3>Bolesti zuba</h3>
+          <h3>Oralna patologija</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            nostrum!
+            Dijagnostifikovanje promena kod oboljena na mekim tkivima sluzokože
+            usne duplje (usana, jezika i obraza) kao i njihovo lećenje.
           </p>
         </div>
         <div className="service">
-          <h3>Bolesti zuba</h3>
+          <h3>Protetika</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
             nostrum!
