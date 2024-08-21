@@ -34,10 +34,12 @@
 }
 
 .hero-pic {
-  display: flex;
+  height: 100%;
+  /* display: flex; */
+  overflow: hidden;
 }
 
 .hero-img {
   width: 100%;
-  align-self: center;
+  /* align-self: center; */
 }

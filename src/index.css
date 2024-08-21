@@ -41,7 +41,19 @@
     display: none;
   }
   .hero-content {
+    background-image: url(./assets/hero-pic.jpg);
+    background-size: cover;
     height: 100vh;
+  }
+  .hero-text {
+    /* background-color: #bbbbbb7c; */
+    height: min-content;
+    align-self: end;
+    color: #fff;
+    padding: 0 0.3rem;
+  }
+  .accent {
+    color: #0097b2;
   }
   .hero-text-inner {
     align-self: end;

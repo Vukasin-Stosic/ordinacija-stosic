@@ -45,7 +45,7 @@ function Main() {
   return (
     <main>
       <div className="services" id="services">
-        <div className="service">
+        <div className="service" id="bolesti-zuba">
           <h3>Bolesti zuba</h3>
           <p>
             Plombiranje zuba helio (bele) i amalgamskim plombama, kao i lečenje
@@ -54,21 +54,21 @@ function Main() {
             izrada folija za kućno beljenje zuba.
           </p>
         </div>
-        <div className="service">
+        <div className="service" id="paradontologija">
           <h3>Paradontologija</h3>
           <p>
             Uklanjanje mekih naslaga i zubnog kamenca. Lečenje upalnih stanja
             potpornog aparata zuba (gingivektomije i režanj operacije).
           </p>
         </div>
-        <div className="service">
+        <div className="service" id="oralna-patologija">
           <h3>Oralna patologija</h3>
           <p>
             Dijagnostifikovanje promena kod oboljena na mekim tkivima sluzokože
             usne duplje (usana, jezika i obraza) kao i njihovo lećenje.
           </p>
         </div>
-        <div className="service">
+        <div className="service" id="protetika">
           <h3>Protetika</h3>
           <p>
             Izrada pokretnih proteza, kako totalnih tako i parcijalnih: -
@@ -79,7 +79,7 @@ function Main() {
             CAD/CAM tehnologijom. Izrada faseta (vinira).
           </p>
         </div>
-        <div className="service">
+        <div className="service" id="oralna-hirurgija">
           <h3>Oralna hirurgija</h3>
           <p>
             Vađenje zuba i komplikovano vađenje zuba, kao i hiruško vađenje
@@ -90,8 +90,8 @@ function Main() {
             hemofiličara.
           </p>
         </div>
-        <div className="service">
-          <h3>Ortodonija</h3>
+        <div className="service" id="ortodincija">
+          <h3>Ortodoncija</h3>
           <p>
             Izrada pokretnih aparata za ispravljane krivih zuba, kao i izrada
             fiksnih aparata (fiksne proteze): a) metalnim bravicama, b)
@@ -104,7 +104,7 @@ function Main() {
             (šrafova).
           </p>
         </div>
-        <div className="service">
+        <div className="service" id="implantologija">
           <h3>Implantologija</h3>
           <p>
             Postavljanje implantata kao jedno od najboljih rešenja za izradu

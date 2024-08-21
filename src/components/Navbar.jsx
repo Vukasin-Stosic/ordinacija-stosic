@@ -72,18 +72,38 @@ function Navbar() {
             </a>
             <ul className="drop-down">
               <li className="navbar-item">
-                <a href="#" className="navbar-item-link">
+                <a href="#bolesti-zuba" className="navbar-item-link">
                   Bolesti zuba
                 </a>
               </li>
               <li className="navbar-item">
-                <a href="#" className="navbar-item-link">
-                  Bolesti zuba
+                <a href="#paradontologija" className="navbar-item-link">
+                  Paradontologija
                 </a>
               </li>
               <li className="navbar-item">
-                <a href="#" className="navbar-item-link">
-                  Bolesti zuba
+                <a href="#oralna-patologija" className="navbar-item-link">
+                  Oralna patologija
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a href="#protetika" className="navbar-item-link">
+                  Protetika
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a href="#oralna-hirurgija" className="navbar-item-link">
+                  Oralna hirurgija
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a href="#ortodoncija" className="navbar-item-link">
+                  Ortodoncija
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a href="#implantologija" className="navbar-item-link">
+                  Implantologija
                 </a>
               </li>
             </ul>
