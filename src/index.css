@@ -45,6 +45,7 @@
     background-size: cover;
     height: 100vh;
     width: 100%;
+    display: flex;
   }
   .hero-text {
     /* background-color: #bbbbbb7c; */
@@ -60,6 +61,11 @@
     align-self: end;
     padding-bottom: 1rem;
   }
+  /* .hero .cta {
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+  } */
   .hero-pic {
     display: none;
   }
