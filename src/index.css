@@ -48,27 +48,20 @@
     display: flex;
   }
   .hero-text {
-    /* background-color: #bbbbbb7c; */
     height: min-content;
     align-self: end;
     color: #fff;
     padding: 0 0.3rem;
-  }
-  .accent {
-    color: #0097b2;
   }
   .hero-text-inner {
     align-self: end;
     padding-bottom: 1rem;
   }
   .hero-text h1 {
-    background-color: #e6f5f77c;
+    background-color: #e6f5f7c2;
+    color: #0097b2;
   }
-  /* .hero .cta {
-    display: block;
-    margin: 0 auto;
-    width: max-content;
-  } */
+
   .hero-pic {
     display: none;
   }
