@@ -8,14 +8,14 @@ function Hero() {
         <div className="hero-text">
           <div className="hero-text-inner">
             <h1>
-              Stomatološka ordinacija Dr <span className="accent">Dragi</span>{" "}
-              Stošić
+              Zdravlje vaših <span className="accent">zuba</span> je u sigurnim
+              rukama
             </h1>
             <p className="hero-message">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Pariatur, nihil necessitatibus? Libero tempora sequi cumque
-              nostrum nobis qui illo recusandae est quia dolore nemo fugit,
-              dolores repellat id sint. Quos!
+              Stomatološka ordinacija Dr Dragi Stošić pruža tretmane prema
+              najvišim svetskim standardima, osiguravajući pacijentima
+              najkvalitetniju terapiju uz personalizovan pristup, korišćenje
+              savremene opreme i garancije na radove.
             </p>
             <a className="cta" href="#contact-us">
               Zakažite besplatan pregled
