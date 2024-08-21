@@ -41,63 +41,55 @@ function Navbar() {
 
   return (
     <nav className={hide ? "sticky" : ""}>
-      <div className="navbar">
-        <div className="navbar-logo">
+      <div className="header">
+        <div className="header-logo">
           <a href="#">
             <img src={logo} alt="company logo" className="logo" />
           </a>
         </div>
-        <div className="navbar-contact">
-          <p className="navbar-contact-item">
+        <div className="header-contact">
+          <p className="header-contact-item">
             <FontAwesomeIcon icon={faLocationDot} /> Partizanska 10 Vranje
           </p>
-          <p className="navbar-contact-item">
+          <p className="header-contact-item">
             <FontAwesomeIcon icon={faPhone} /> 0637351651
           </p>
         </div>
-        <ul className="navbar-list">
-          <li>
-            <a href="#about" className="navbar-list-item">
+        <ul className="navbar">
+          <li className="navbar-item">
+            <a href="#about" className="navbar-item-link">
               O nama
             </a>
           </li>
           <li
+            className="navbar-item"
             id="navbar-services"
             onMouseEnter={showDropDown}
             onMouseLeave={showDropDown}
           >
-            <a href="#services" className="navbar-list-item">
+            <a href="#services" className="navbar-item-link">
               Usluge <FontAwesomeIcon icon={faSortDown} />
             </a>
-            <div className={dropDown ? "drop-down" : "hidden"}>
-              <a href="#" className="drop-down-item">
-                Bolesti zuba
-              </a>
-              <a href="#" className="drop-down-item">
-                Bolesti zuba
-              </a>
-              <a href="#" className="drop-down-item">
-                Bolesti zuba
-              </a>
-              <a href="#" className="drop-down-item">
-                Bolesti zuba
-              </a>
-              <a href="#" className="drop-down-item">
-                Bolesti zuba
-              </a>
-              <a href="#" className="drop-down-item">
-                Bolesti zuba
-              </a>
-              <a href="#" className="drop-down-item">
-                Bolesti zuba
-              </a>
-              <a href="#" className="drop-down-item">
-                Bolesti zuba
-              </a>
-            </div>
+            <ul className="drop-down">
+              <li className="navbar-item">
+                <a href="#" className="navbar-item-link">
+                  Bolesti zuba
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a href="#" className="navbar-item-link">
+                  Bolesti zuba
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a href="#" className="navbar-item-link">
+                  Bolesti zuba
+                </a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="#contact-us" className="navbar-list-item">
+          <li className="navbar-item">
+            <a href="#contact-us" className="navbar-item-link">
               Kontakt
             </a>
           </li>

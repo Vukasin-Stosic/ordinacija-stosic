@@ -57,3 +57,10 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .phone-hidden {
+    right: unset;
+    left: 0;
+  }
+}

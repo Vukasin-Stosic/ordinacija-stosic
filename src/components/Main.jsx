@@ -70,29 +70,49 @@ function Main() {
         <div className="service">
           <h3>Protetika</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            nostrum!
+            Izrada pokretnih proteza, kako totalnih tako i parcijalnih: -
+            klasične akrilatne - elastične - skeletirane (metalne –
+            kobalt-hrom-molibden - vizil proteze) vizil proteze sa kopčama
+            (drikerima). Izrada krunica i mostova, kao fiksnih zubnih nadoknada,
+            metalokeramičkih i bezmetalnih (litijum-disilikatnih i cirkon kruna)
+            CAD/CAM tehnologijom. Izrada faseta (vinira).
           </p>
         </div>
         <div className="service">
-          <h3>Bolesti zuba</h3>
+          <h3>Oralna hirurgija</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            nostrum!
+            Vađenje zuba i komplikovano vađenje zuba, kao i hiruško vađenje
+            umnjaka, očnjaka i ostalih impaktiranih zuba. Uklanjanje cisti i
+            granuloma na zubima (apikotomije). Zatvaranje oro-antralnih
+            komunikacija (otvoren sinus). Uklanjanje resica (frenuluma) usana i
+            jezika. I sve to u lokalnoj anesteziji. Vađenje zuba kod
+            hemofiličara.
           </p>
         </div>
         <div className="service">
-          <h3>Bolesti zuba</h3>
+          <h3>Ortodonija</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            nostrum!
+            Izrada pokretnih aparata za ispravljane krivih zuba, kao i izrada
+            fiksnih aparata (fiksne proteze): a) metalnim bravicama, b)
+            keramičkim (fiber-glas, neprovidnim bravicama), c) samoligirajuće
+            bravice i d) 2D lingvalne bravice sa unutrašnje strane zuba tako da
+            se one ne vide spolja. Izrada fiksnih retejnera kao i pokretnih
+            retejnera u vidu folija za održavanje postignutih rezultata posle
+            terapije fiksnim protezama. Izvlačenje impaktiranih očnjaka i drugih
+            zuba i njihovo dovođenje u zubni niz putem ortodontskih implantata
+            (šrafova).
           </p>
         </div>
         <div className="service">
-          <h3>Bolesti zuba</h3>
+          <h3>Implantologija</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            nostrum!
+            Postavljanje implantata kao jedno od najboljih rešenja za izradu
+            fiksnih zubnih nadoknada. Rade se kao imedijatni implantati gde
+            odmah vršimo ugradnju implantata posle vađenja i odmah postavljanja
+            krunica na inplantatima. Radi se i odložena izrada krunica odnosno
+            mostova na implantatima nakon ugradnje za 3 do 6 meseci. Postavljane
+            mini-dentalnih implantata (MDI) za pridržavanje nestabilnih totalnih
+            proteza.
           </p>
         </div>
         <div className="service">
@@ -113,12 +133,16 @@ function Main() {
             Stomatološka ordinacija Dr Dragi Stošić
           </h2>
           <p className="about-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            nulla minima assumenda ipsam laudantium dignissimos natus est
-            consectetur omnis ducimus tempora dolores, totam atque aliquid
-            porro! Soluta dolorum similique ullam, aut maxime saepe laborum
-            numquam, deserunt voluptates qui commodi voluptate consectetur enim
-            quis recusandae omnis, tempore nam neque adipisci voluptatibus?
+            Početak rada ove ordinacije je iz 1995 godine. Teški uslovi rada
+            iziskivali Prvi pregled je besplatan, a na njemu se dobija uvid u
+            trenutno stanje usta i zuba nakon čega se donosi plan terapije.
+            Stomatološka zdravstvena zaštita je sveobuhvatna i radi se sve počev
+            od popravke i vađenja zuba pa sve do ugradnje implantata.
+          </p>
+          <p className="about-text">
+            Ordinacija ima svoju zubnu tehniku za izradu protetskih nadoknada i
+            ortodontskih aparata. Tehnika poseduje i CAD/CAM sistem za izradu
+            metalo-keramičkih i bezmetalnih krunica, mostova i vinira.
           </p>
         </div>
       </div>
