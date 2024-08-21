@@ -219,10 +219,12 @@ function Main() {
                     <FontAwesomeIcon icon={faXmark} />
                     <div className={showPhone ? "phone-hidden" : "hidden"}>
                       <div className="cta phone-btn phone-btn-inner">
-                        <FontAwesomeIcon icon={faPhoneFlip} /> 017417419
+                        <FontAwesomeIcon icon={faPhoneFlip} />{" "}
+                        <a href="tel:+381174174191">017417419</a>
                       </div>
                       <div className="cta phone-btn phone-btn-inner">
-                        <FontAwesomeIcon icon={faMobileScreen} /> 0637351651
+                        <FontAwesomeIcon icon={faMobileScreen} />{" "}
+                        <a href="tel:+381637351651">0637351651</a>
                       </div>
                     </div>
                   </p>

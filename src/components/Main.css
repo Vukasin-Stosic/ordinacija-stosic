@@ -176,6 +176,11 @@ textarea:focus {
   align-items: center;
 }
 
+.phone-btn-inner a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .email-btn:hover {
   box-shadow: none;
 }
