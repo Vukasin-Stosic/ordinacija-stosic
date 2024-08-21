@@ -8,6 +8,7 @@ import {
   faPhone,
   faPhoneFlip,
   faMobileScreen,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Main.css";
 
@@ -215,7 +216,7 @@ function Main() {
               <a className="cta phone-btn" onClick={phoneCall}>
                 {showPhone ? (
                   <p className="close">
-                    &#10005;
+                    <FontAwesomeIcon icon={faXmark} />
                     <div className={showPhone ? "phone-hidden" : "hidden"}>
                       <div className="cta phone-btn phone-btn-inner">
                         <FontAwesomeIcon icon={faPhoneFlip} /> 017417419
