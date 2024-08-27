@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "leaflet/dist/leaflet.css";
 import aboutPic from "../assets/about.png";
+import bolestiZubaPic from "../assets/bolesti-zuba.jpg";
+import paradontologijaPic from "../assets/paradontologija.png";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -46,20 +48,26 @@ function Main() {
     <main>
       <div className="services" id="services">
         <div className="service" id="bolesti-zuba">
-          <h3>Bolesti zuba</h3>
-          <p>
-            Plombiranje zuba helio (bele) i amalgamskim plombama, kao i lečenje
-            upalnih stanja zuba (pulpiti), nadogradnja polomljenih krunica zuba
-            inlejima ili onlejim. Beljenje zuba ordinacijska varijanta ili
-            izrada folija za kućno beljenje zuba.
-          </p>
+          <img src={bolestiZubaPic} alt="" className="service-img" />
+          <div className="service-text">
+            <h3>Bolesti zuba</h3>
+            <p>
+              Plombiranje zuba helio (bele) i amalgamskim plombama, kao i
+              lečenje upalnih stanja zuba (pulpiti), nadogradnja polomljenih
+              krunica zuba inlejima ili onlejim. Beljenje zuba ordinacijska
+              varijanta ili izrada folija za kućno beljenje zuba.
+            </p>
+          </div>
         </div>
         <div className="service" id="paradontologija">
-          <h3>Paradontologija</h3>
-          <p>
-            Uklanjanje mekih naslaga i zubnog kamenca. Lečenje upalnih stanja
-            potpornog aparata zuba (gingivektomije i režanj operacije).
-          </p>
+          <img src={paradontologijaPic} alt="" className="service-img" />
+          <div className="service-text">
+            <h3>Paradontologija</h3>
+            <p>
+              Uklanjanje mekih naslaga i zubnog kamenca. Lečenje upalnih stanja
+              potpornog aparata zuba (gingivektomije i režanj operacije).
+            </p>
+          </div>
         </div>
         <div className="service" id="oralna-patologija">
           <h3>Oralna patologija</h3>

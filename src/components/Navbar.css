@@ -65,10 +65,13 @@ nav {
   /* transition: all ease 0.3s; */
   display: flex;
   gap: 0.5rem;
-  align-items: center;
+  align-items: last baseline;
   padding: 1rem 0;
   height: 100%;
 }
+/* .down-arrow {
+  align-self: auto;
+} */
 .navbar-item-link:hover {
   color: #b20097;
 }

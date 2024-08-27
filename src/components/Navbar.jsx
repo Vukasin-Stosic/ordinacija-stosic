@@ -68,7 +68,8 @@ function Navbar() {
             onMouseLeave={showDropDown}
           >
             <a href="#services" className="navbar-item-link">
-              Usluge <FontAwesomeIcon icon={faSortDown} />
+              Usluge{" "}
+              <FontAwesomeIcon icon={faSortDown} className="down-arrow" />
             </a>
             <ul className="drop-down">
               <li className="navbar-item">

@@ -12,9 +12,26 @@ main {
 
 .service {
   background-color: #0097b2;
-  padding: 1rem;
-  height: 15rem;
+  /* height: 15rem; */
 }
+
+.service-img {
+  width: 100%;
+}
+
+.service-text {
+  padding: 1rem;
+}
+
+.service-text p {
+  margin-top: 1rem;
+}
+
+/* #paradontologija {
+  background-image: url(../assets/paradontologija.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
 
 .about {
   width: 85%;
