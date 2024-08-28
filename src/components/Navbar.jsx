@@ -6,11 +6,13 @@ import {
   faLocationDot,
   faPhone,
   faSortDown,
+  faBars,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   const [hide, setHide] = useState(false);
-  const [dropDown, setDropDown] = useState(false);
+  const [hamMenu, setHamMenu] = useState(false);
 
   let prevScrollpos = window.scrollY;
 
@@ -24,8 +26,8 @@ function Navbar() {
     prevScrollpos = currentScrollPos;
   }
 
-  function showDropDown() {
-    !dropDown ? setDropDown(true) : setDropDown(false);
+  function hamburgerMenu() {
+    !hamMenu ? setHamMenu(true) : setHamMenu(false);
   }
 
   window.addEventListener("scroll", hideNavbar);
@@ -46,6 +48,16 @@ function Navbar() {
           <a href="#">
             <img src={logo} alt="company logo" className="logo" />
           </a>
+          <div className="hamburger" onClick={hamburgerMenu}>
+            <FontAwesomeIcon
+              icon={faBars}
+              className={hamMenu ? "hidden" : ""}
+            />
+            <FontAwesomeIcon
+              icon={faXmark}
+              className={hamMenu ? "" : "hidden"}
+            />
+          </div>
         </div>
         <div className="header-contact">
           <p className="header-contact-item">
@@ -55,18 +67,13 @@ function Navbar() {
             <FontAwesomeIcon icon={faPhone} /> 0637351651
           </p>
         </div>
-        <ul className="navbar">
+        <ul className={hamMenu ? "navbar" : "navbar navbar-hamburger"}>
           <li className="navbar-item">
             <a href="#about" className="navbar-item-link">
               O nama
             </a>
           </li>
-          <li
-            className="navbar-item"
-            id="navbar-services"
-            onMouseEnter={showDropDown}
-            onMouseLeave={showDropDown}
-          >
+          <li className="navbar-item" id="navbar-services">
             <a href="#services" className="navbar-item-link">
               Usluge{" "}
               <FontAwesomeIcon icon={faSortDown} className="down-arrow" />

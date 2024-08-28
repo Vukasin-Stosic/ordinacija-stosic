@@ -37,9 +37,37 @@
 }
 
 @media screen and (max-width: 430px) {
-  nav {
+  /* hamburger */
+  .header-contact {
     display: none;
   }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-logo {
+    width: 100%;
+    z-index: 10;
+  }
+  .navbar {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    justify-content: flex-start;
+    align-content: center;
+    width: 250px;
+    padding-top: 150px;
+  }
+  .navbar-hamburger {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  /* hamburger */
+
   .hero-content {
     background-image: url(./assets/hero-pic.jpg);
     background-size: cover;
