@@ -5,7 +5,7 @@
 .hero-content {
   width: 85%;
   margin: 0 auto;
-  height: calc(100vh - 7rem);
+  min-height: calc(100vh - 7rem);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
