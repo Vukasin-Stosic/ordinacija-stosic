@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../assets/logo4.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,71 +11,80 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
-  const [hide, setHide] = useState(false);
   const [hamMenu, setHamMenu] = useState(false);
-
-  let prevScrollpos = window.scrollY;
-
-  function hideNavbar() {
-    let currentScrollPos = window.scrollY;
-    if (prevScrollpos > currentScrollPos) {
-      setHide(true);
-    } else {
-      setHide(false);
-    }
-    prevScrollpos = currentScrollPos;
-  }
 
   function hamburgerMenu() {
     !hamMenu ? setHamMenu(true) : setHamMenu(false);
   }
 
-  window.addEventListener("scroll", hideNavbar);
-  // window.onscroll = function () {
-  //   let currentScrollPos = window.scrollY;
-  //   if (prevScrollpos > currentScrollPos) {
-  //     navRef.current.classList.add("sticky");
-  //   } else {
-  //     navRef.current.classList.remove("sticky");
-  //   }
-  //   prevScrollpos = currentScrollPos;
-  // };
+  const [showNavbar, setShowNavbar] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY === 0) {
+      setShowNavbar(false);
+    } else if (currentScrollY > lastScrollY) {
+      // Scrolling down
+      setShowNavbar(false);
+    } else {
+      // Scrolling up
+      setShowNavbar(true);
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
+  const links = document.querySelectorAll(".navbar-item");
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.stopPropagation();
+      hamburgerMenu();
+    });
+  });
 
   return (
-    <nav className={hide ? "sticky" : ""}>
+    <nav className={showNavbar ? "sticky" : "sticky-mobile"}>
+      <div className={showNavbar ? "none" : "header-contact"}>
+        <p className="header-contact-item">
+          <FontAwesomeIcon icon={faLocationDot} /> Partizanska 10 Vranje
+        </p>
+        <p className="header-contact-item">
+          <FontAwesomeIcon icon={faPhone} /> 0637351651
+        </p>
+      </div>
       <div className="header">
         <div className="header-logo">
-          <a href="#">
-            <img src={logo} alt="company logo" className="logo" />
-          </a>
           <div className="hamburger" onClick={hamburgerMenu}>
-            <FontAwesomeIcon
-              icon={faBars}
-              className={hamMenu ? "hidden" : ""}
-            />
-            <FontAwesomeIcon
-              icon={faXmark}
-              className={hamMenu ? "" : "hidden"}
-            />
+            {hamMenu ? (
+              <FontAwesomeIcon icon={faXmark} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
           </div>
+          <a href="#" className="logo">
+            <img src={logo} alt="company logo" className="logo-img" />
+            <span className="logo-text">Dr Stošić</span>
+          </a>
         </div>
-        <div className="header-contact">
-          <p className="header-contact-item">
-            <FontAwesomeIcon icon={faLocationDot} /> Partizanska 10 Vranje
-          </p>
-          <p className="header-contact-item">
-            <FontAwesomeIcon icon={faPhone} /> 0637351651
-          </p>
-        </div>
-        <ul className={hamMenu ? "navbar" : "navbar navbar-hamburger"}>
+        <ul className={hamMenu ? "navbar" : "navbar hidden"}>
           <li className="navbar-item">
             <a href="#about" className="navbar-item-link">
               O nama
             </a>
           </li>
           <li className="navbar-item" id="navbar-services">
-            <a href="#services" className="navbar-item-link">
-              Usluge{" "}
+            <a href="#services" className="navbar-item-link" id="services-link">
+              <span>Usluge</span>
               <FontAwesomeIcon icon={faSortDown} className="down-arrow" />
             </a>
             <ul className="drop-down">
@@ -91,7 +100,7 @@ function Navbar() {
               </li>
               <li className="navbar-item">
                 <a href="#oralna-patologija" className="navbar-item-link">
-                  Oralna patologija
+                  Oralna medicina
                 </a>
               </li>
               <li className="navbar-item">
@@ -112,6 +121,11 @@ function Navbar() {
               <li className="navbar-item">
                 <a href="#implantologija" className="navbar-item-link">
                   Implantologija
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a href="#decija-stomatologija" className="navbar-item-link">
+                  Dečija stomatologija
                 </a>
               </li>
             </ul>

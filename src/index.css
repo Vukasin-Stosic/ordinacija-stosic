@@ -1,108 +1,150 @@
-@media screen and (max-width: 1030px) {
-  .email-form {
-    display: flex;
+@media (max-width: 400px) {
+  .action {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 780px) {
-  .navbar-list-item {
-    margin-left: 1rem;
+@media (min-width: 768px) {
+  .sticky-mobile {
+    position: unset;
   }
+
+  .header {
+    padding: 0 5em;
+  }
+
+  .header-contact {
+    display: flex;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .logo-img {
+    width: 80px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar {
+    margin-left: auto;
+    margin-right: unset;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 1em;
+    font-weight: bold;
+    background-color: unset;
+    visibility: visible;
+    padding: 0;
+  }
+
+  .navbar-item-link {
+    color: var(--color-primary);
+  }
+
+  .drop-down {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -100px;
+    display: none;
+    background-color: white;
+  }
+
+  .drop-down .navbar-item {
+    padding: 0.7em 1em;
+    width: 200px;
+  }
+
+  .navbar-item {
+    position: relative;
+    align-items: center;
+  }
+
+  .drop-down .navbar-item::after {
+    content: "";
+    width: 70%;
+    border-bottom: 1px solid silver;
+    position: absolute;
+    top: 100%;
+  }
+
+  .drop-down .navbar-item:last-of-type::after {
+    border-bottom: none;
+  }
+
+  #navbar-services:hover .drop-down {
+    display: block;
+  }
+
   .services {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 95%;
+    gap: 1em;
   }
-  .about {
-    grid-template-columns: 1fr 2fr;
-    width: 95%;
-  }
-  .about-img {
-    max-width: 100%;
+
+  .container {
+    margin: 0 3em;
   }
 
   .info-section {
-    grid-template-columns: 1fr;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .location,
-  .compani-info,
+
   .contact-us {
-    width: 95%;
-    margin: 0 auto;
-  }
-  .location {
-    min-height: calc(80vw);
+    grid-column-start: span 2;
   }
 }
 
-@media screen and (max-width: 430px) {
-  /* hamburger */
-  .header-contact {
-    display: none;
-  }
-  .header {
-    display: flex;
-    flex-direction: column;
-  }
-  .header-logo {
-    width: 100%;
-  }
-  .navbar {
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    justify-content: flex-start;
-    align-content: center;
-    width: 250px;
-    padding-top: 150px;
-  }
-  .navbar-hamburger {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
-  /* hamburger */
-
+@media (min-width: 992px) {
   .hero-content {
-    background-image: url(./assets/hero-pic.jpg);
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-  }
-  .hero-text {
-    height: min-content;
-    align-self: end;
-    color: #fff;
-    padding: 0 0.3rem;
-  }
-  .hero-text-inner {
-    align-self: end;
-    padding-bottom: 1rem;
-  }
-  .hero-text h1 {
-    background-color: #e6f5f7c2;
-    color: #0097b2;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .hero-pic {
-    display: none;
+  .hero-text {
+    flex-basis: 40%;
+  }
+
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .about-content {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-us {
+    grid-column-start: unset;
   }
   .services {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
-  .about {
-    grid-template-columns: 1fr;
+  .container {
+    margin: 0 5em;
   }
 }
 
-@media screen and (max-width: 380px) {
-  .phone-hidden {
-    right: unset;
-    left: 0;
+@media (min-width: 1600px) {
+  .container {
+    margin: 0 10em;
   }
 }

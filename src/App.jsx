@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -10,14 +10,6 @@ import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 function App() {
   const [show, setShow] = useState(false);
 
-  // window.onscroll = function () {
-  //   if (window.scrollY > 300) {
-  //     setShow(true);
-  //   } else {
-  //     setShow(false);
-  //   }
-  // };
-
   function showToTop() {
     if (window.scrollY > 300) {
       setShow(true);
@@ -26,7 +18,13 @@ function App() {
     }
   }
 
-  window.addEventListener("scroll", showToTop);
+  useEffect(() => {
+    window.addEventListener("scroll", showToTop);
+
+    return () => {
+      window.removeEventListener("scroll", showToTop);
+    };
+  }, []);
 
   return (
     <div>

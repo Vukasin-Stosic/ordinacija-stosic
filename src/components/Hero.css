@@ -1,45 +1,18 @@
 .hero {
-  background-color: #e6f5f7;
+  background-color: var(--color-tertiary);
+  display: flex;
+  justify-content: center;
 }
 
 .hero-content {
-  width: 85%;
-  margin: 0 auto;
-  min-height: calc(100vh - 7rem);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.hero-text {
-  height: 100%;
-  color: #0097b2;
+  /* max-height: 100vh; */
   display: flex;
-}
-
-.hero-text-inner {
-  align-self: center;
-}
-
-.hero-text h1 {
-  font-size: 2.5rem;
-}
-
-.accent {
-  color: #97b200;
-}
-
-.hero-message {
-  padding: 2rem 0;
-}
-
-.hero-pic {
-  height: 100%;
-  /* display: flex; */
-  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  max-width: 1400px;
 }
 
 .hero-img {
-  width: 100%;
-  /* align-self: center; */
+  max-width: 100%;
 }
