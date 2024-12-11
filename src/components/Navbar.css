@@ -1,8 +1,4 @@
-.sticky {
-  position: sticky;
-  top: 0;
-}
-
+.sticky,
 .sticky-mobile {
   position: sticky;
   top: 0;
@@ -58,7 +54,7 @@
 }
 
 .navbar {
-  margin: 0 calc(0em - var(--header-margin));
+  margin: 0;
   padding: 2em;
   list-style: none;
   font-size: 1.1rem;
